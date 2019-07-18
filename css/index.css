@@ -1,0 +1,426 @@
+body{
+	font-family: 'Sniglet', cursive;
+	margin: 0;
+}
+header{
+	width: 100%;
+	height: 100px;
+	background: #363636;
+}
+.logo{
+	width: 90px;
+	height: 75px;
+	margin: 10px 0 0 30px;
+	border: 0;
+	float: left;
+	-moz-transition: transform 1500ms;
+ 	-webkit-transition: transform 1500ms;
+  	transition: transform 1500ms;
+}
+.logo:hover{
+	transform: rotateY(720deg);
+	/*-moz-transition: transform 1500ms;
+ 	-webkit-transition: transform 1500ms;
+  	transition: transform 1500ms;*/
+}
+.wt{
+	font-size: 2em;
+	margin: 30px 0 0 70px;
+	color: #eee;
+}
+.social-item:hover{
+	transform: scale(1.2);
+	-moz-transition: transform 500ms;
+ 	-webkit-transition: transform 500ms;
+  	transition: transform 500ms;
+}
+.container{
+  width: 300px;
+  height: 50px;
+  float: right;
+  margin-right: 55px;
+}
+.soc{
+  color: #fff;
+  margin: 0;
+}
+.instagram:hover .fa-instagram{
+  border-color: #bc2a8d;
+  box-shadow: 0px 0px 35px #bc2a8d;
+  color: #bc2a8d;
+}
+.viber:hover .fa-viber{
+  border-color:#7A1E9A;
+  box-shadow: 0px 0px 35px #7A1E9A;
+  color: #7A1E9A;
+}
+.pinterest:hover .fa-pinterest-p{
+  border-color: #F30E0E;
+  box-shadow: 0px 0px 35px #F30E0E;
+  color: #F30E0E;
+}
+.telegram:hover .fa-telegram{
+  border-color: #00aced;
+  box-shadow: 0px 0px 35px #00aced;
+  color: #00aced;
+}
+.social{
+  list-style: none;
+  color: #fff;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 350px;
+}
+.social-item{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-item:hover{
+  cursor: pointer;
+}
+.instagram:hover{
+  border-color: #bc2a8d;
+  box-shadow: 0px 0px 35px #bc2a8d;
+  color: #bc2a8d;
+}
+.viber:hover{
+  border-color: #7A1E9A;
+  box-shadow: 0px 0px 35px #7A1E9A;
+  color: #7A1E9A;
+}
+.pinterest:hover{
+  border-color: #F30E0E;
+  box-shadow: 0px 0px 35px #F30E0E;
+  color: #F30E0E;
+}
+.telegram:hover{
+  border-color: #00aced;
+  box-shadow: 0px 0px 35px #00aced;
+  color: #00aced;
+}
+.telegram .fa-telegram:hover{
+  border-color: #00aced;
+  box-shadow: 0px 0px 35px #00aced;
+  color: #00aced;
+}
+.left-block{
+	width: 300px;
+	height: 751px;
+	border: 1.5px solid black;
+	float: left;
+	background: #eee;
+	/*display: none;*/
+	-moz-transition: all 400ms;
+ 	-webkit-transition: all 400ms;
+  	transition: all 400ms;
+	transform: translateX(-400px);
+}
+#box.active{
+	transform: translateX(0px);
+}
+.bt{
+	width: 64px;
+	height: 64px;
+	border: 0;
+	margin: 20px 20px 0 0;
+	background: url(../img/menu.png);
+}
+/*.burger-menu{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: white;
+	border: 1.5px solid black;
+	margin: 20px 0 0 20px;
+}
+.line1{
+	width: 37px;
+	height: 4px;
+	margin: 15px 0 0 12px;
+	background: black;
+	border-radius: 3px;
+}
+.line2{
+	width: 37px;
+	height: 4px;
+	margin: 10px 0 0 12px;
+	background: black;
+	border-radius: 3px;
+}
+.burger-menu:hover ~ .left-block{
+	transform: translateX(0px);
+	transition: 0.5s;
+	position: fixed;
+}*/
+.h{
+	width: 40px;
+	height: 30px;
+	font-size: 25px;
+	margin: 40px 0 0 40px;
+}
+.a1{
+	font-size: 20px;
+	margin: 40px 0 0 0;
+}
+.a2{
+	font-size: 20px;
+	margin: 40px 0 0 30px;
+}
+.assassins{
+	width: 250px;
+	height: 500px;
+}
+.main{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.tabs {
+	min-width: 320px;
+	max-width: 800px;
+	padding: 0px;
+	margin: 0 auto;
+	margin-top: 8px;
+}
+/* Стили секций с содержанием */
+.tabs>section {
+	display: none;
+	padding: 15px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+.tabs>section>p {
+	margin: 0 0 5px;
+	line-height: 1.5;
+	color: #383838;
+	/* прикрутим анимацию */
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+ 
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* Прячем чекбоксы */
+.tabs>input {
+	display: none;
+	position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs>label {
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 15px 25px;
+	font-weight: 600;
+	text-align: center;
+	color: #aaa;
+	border: 0px solid #ddd;
+	border-width: 1px 1px 1px 1px;
+	background: #f1f1f1;
+	border-radius: 3px 3px 0 0;
+}
+/* Шрифт-иконки от Font Awesome в формате Unicode */
+/*.tabs>label:before {
+	font-family: fontawesome;
+	font-weight: normal;
+	margin-right: 10px;
+}
+.tabs>label[for*="1"]:before {
+	content: "\f19a";
+}
+.tabs>label[for*="2"]:before {
+	content: "\f17a";
+}
+.tabs>label[for*="3"]:before {
+	content: "\f13b";
+}
+.tabs>label[for*="4"]:before {
+	content: "\f13c";
+}*/
+/* Изменения стиля переключателей вкладок при наведении */
+ 
+.tabs>label:hover {
+	color: #888;
+	cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs>input:checked+label {
+	color: #555;
+	border-top: 1px solid #009933;
+	border-bottom: 1px solid #fff;
+	background: #fff;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+	display: block;
+}
+/* Убираем текст с переключателей 
+* и оставляем иконки на малых экранах
+*/
+ 
+@media screen and (max-width: 680px) {
+	.tabs>label {
+		font-size: 0;
+	}
+	.tabs>label:before {
+		margin: 0;
+		font-size: 18px;
+	}
+}
+/* Изменяем внутренние отступы 
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+	.tabs>label {
+		padding: 15px;
+	}
+}
+span{
+	border: 1.5px solid black;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.ac1, .ac2, .ac-br, .ac-rl, .ac3, .ac4, .ac-un, .ac-rg, .ac-sd, .ac-or, .ac-od, .film{
+	width: 760px;
+	height: 300px;
+	background: #eee;
+	margin: 30px 0 0 0;
+	border-radius: 10px;
+}
+img{
+	width: 150px;
+	height: 200px;
+	margin: 50px 0 0 30px;
+	border: 1.5px solid black;
+	float: left;
+}
+a{
+	display: inline-block;
+	margin: 50px 0 0 15px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #324DAA;
+}
+a:hover{
+	text-decoration: underline;
+}
+p{
+	margin: 20px 20px 0 200px;
+}
+.dlc{
+	width: 200px;
+	height: 125px;
+	margin: 50px 0 0 20px;
+}
+.dlc1, .dlc2, .dlc3, .dlc4, .dlc5, .dlc6, .dlc7{
+	background: #eee;
+	border-radius: 10px;
+}
+.p3{
+	margin-left: 240px;
+}
+.dlc2, .dlc5{
+	margin-top: 20px;
+}
+.dlc3, .dlc4, .dlc6, .dlc7{
+	margin-top: 20px;
+	height: 235px;
+}
+.dlc-1{
+	margin-top: 10px;
+}
+.g1, .g2, .g3, .g4, .g5, .g6{
+	background: #eee;
+	border-radius: 10px;
+	height: 250px;
+	margin-top: 20px;
+}
+.mob{
+	margin-top: 30px;
+	height: 200px;
+	width: 150px;
+}
+@media screen and (max-width: 941px){
+	.tabs{
+		width: 600px;
+	}
+	.wt{
+		font-size: 20px;
+		margin: 30px 0 0 140px;
+	}
+	.content{
+		float: 0;
+		width: 90%;
+		font-size: 10px;
+	}
+	.left-block{
+		font-size: 5px;
+	}
+	.bt, .logo, .social{
+		display: none;
+	}
+}
+@media screen and (max-width: 768px){
+	header{
+		width: 640px;
+		margin-left: 70px;
+	}
+	.tabs{
+		width: 600px;
+	}
+	.wt{
+		font-size: 20px;
+		text-align: center;/*30px 0 0 80px;*/
+	}
+	.content{
+		float: 0;
+		width: 90%;
+		font-size: 8px;
+		margin-top: 5px;
+		height: 235px;
+	}
+	.left-block{
+		font-size: 2px;
+	}
+	.bt{
+		width: 64px;
+		height: 64px;
+	}
+	.p3{
+		margin-left: 100px;
+	}
+	.content img{
+		width: 100px;
+		height: 150px;
+	}
+	.bt, .logo, .social{
+		display: none;
+	}
+	a{
+		font-size: 10px;
+	}
+}

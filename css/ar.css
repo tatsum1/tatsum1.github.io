@@ -1,0 +1,38 @@
+body{
+	font-family: 'Sniglet', cursive;
+	background: url(../img/ac.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;  
+	/*margin: 0;*/
+}
+.first{
+	width: 750px;
+	height: 1075px;
+	background: #727278;
+	margin: auto;
+	opacity: 0.9;
+	border-radius: 10px;
+}
+.poster{
+	width: 175px;
+	height: 400px;
+	margin: 10px 0 0 30px;
+	border: 1.5px solid black;
+	float: left;
+}
+h1{
+	margin: 0 0 0 20px;
+	padding-top: 10px;
+	float: left;
+}
+.p2{
+	margin: 20px 0 0 50px;
+}
+.trailer{
+	width: 510px;
+	height: 400px;
+	margin: 10px 0 0 15px;
+}
+h3, .plot{
+	 margin-left: 20px;
+}
