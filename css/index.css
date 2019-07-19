@@ -130,6 +130,7 @@ header{
 	border: 0;
 	margin: 20px 20px 0 0;
 	background: url(../img/menu.png);
+	outline: none;
 }
 /*.burger-menu{
 	width: 60px;
@@ -416,9 +417,6 @@ p{
 	.content img{
 		width: 100px;
 		height: 150px;
-	}
-	.bt, .logo, .social{
-		display: none;
 	}
 	a{
 		font-size: 10px;
